@@ -29,8 +29,8 @@ variable "environment" {
   type        = string
 
   validation {
-    condition     = contains(["dev", "qa", "pdn", "stg", "uat", "prod"], var.environment)
-    error_message = "La variable 'environment' debe ser uno de: dev, qa, pdn, stg, uat, prod."
+    condition     = contains(["dev", "qa", "pdn", "stg", "uat", "prod", "poc"], var.environment)
+    error_message = "La variable 'environment' debe ser uno de: dev, qa, pdn, stg, uat, prod, poc."
   }
 }
 
